@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Actual DOM</title>
+ </head>
+
+ <body>
+	<div id='displayTime'></div>
+ </body>
+		<script>
+			function updateTime() 
+			{
+			var element	 =	'<h1>Welcome to CBIT</h1>';
+				element +=	'<h1>Now the Time is</h1>';
+				element +=   '<p>'+new Date().toLocaleTimeString()+'<p>';
+				document.getElementById('displayTime').innerHTML=element;
+			}
+			window.setInterval(updateTime, 1000);
+</script>
+
+</html>
